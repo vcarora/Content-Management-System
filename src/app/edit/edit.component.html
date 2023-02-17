@@ -1,0 +1,27 @@
+<div id="add-content" [class.mat-elevation-z8]="true">
+    <h1>Edit Content</h1>
+    <div>
+        <form [formGroup]="editContent" (submit)="edit()">
+            <mat-form-field appearance="fill">
+                <mat-label>Title</mat-label>
+                <input matInput type="text" formControlName="title">
+                <mat-error *ngIf="title?.errors?.['required']">
+                    Title is required.
+                </mat-error>
+                <mat-error *ngIf="title?.errors?.['minlength']">
+                    Title should have minimum of 5 characters.
+                </mat-error>
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Description</mat-label>
+                <textarea matInput type="text" formControlName="description"></textarea>
+                <mat-error *ngIf="description?.errors?.['required']">
+                    Description is required.
+                </mat-error>
+              
+            </mat-form-field>
+            <button mat-button type="submit" >Update</button>
+        </form>
+    </div>
+</div>
+

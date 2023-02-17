@@ -1,0 +1,28 @@
+#main-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3rem;
+    background-color: blueviolet;
+    height: 100%;
+}
+
+#text{
+    margin-top: 5rem;
+    margin-left: 4rem;
+    height: 100%;
+   
+}
+h1{
+    
+    font-size: 5rem;
+    color: aliceblue;
+}
+
+p{
+    margin-top: 4rem;
+    color: aliceblue;
+}
+button{
+    size: 10rem;
+    background-color: aliceblue;
+}

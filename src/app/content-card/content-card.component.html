@@ -1,0 +1,26 @@
+<div id="content-container">
+
+    <p><span>Email : </span> {{userData?.email}} </p>
+   
+      <div id="sub-container" *ngFor="let list of userData?.contentList">
+        <h1 id="title">
+            {{list?.title}}
+    </h1>
+    <p id="description">
+        {{list?.description}}
+    </p>
+    <div class="icons">
+        <button mat-icon-button color="primary" (click)="edit(list)">
+            <mat-icon>edit</mat-icon>
+          </button>   
+          <button mat-icon-button color="primary" (click)="delete(list,userData?.email)">
+            <mat-icon>delete</mat-icon>
+          </button>       
+    </div>
+    <div id="bottom-container" >
+        <p><span>Publisher Name :</span>{{userData?.name}}</p>
+    </div>
+
+      </div>  
+        
+</div>

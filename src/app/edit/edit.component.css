@@ -1,0 +1,21 @@
+form{
+    display: flex;
+    flex-direction: column;
+    
+}
+#add-content{
+    /* border: 1px solid black; */
+   text-align: center;
+   padding: 1rem;
+   position: sticky;
+   width: 40vw;
+   margin-left: 30%;
+   margin-top: 10%;
+}
+
+button{
+    width: fit-content;
+    background-color: blueviolet;
+    margin-left: auto;
+    margin-right: 2%;
+}

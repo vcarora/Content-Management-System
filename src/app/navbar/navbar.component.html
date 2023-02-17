@@ -1,0 +1,12 @@
+<nav>
+    <div id="nav-container">
+        <div id="brand-name">
+            <h1>Content Management System</h1>
+        </div>
+        <div>
+            <button mat-button (click)="login()" *ngIf="!isLoggedIn" >Login</button>
+            <button mat-button (click)="logout()" *ngIf="isLoggedIn">Logout</button>
+            <button mat-button (click)="register()"  *ngIf="!isLoggedIn">SignUp</button>
+        </div>
+    </div>
+</nav>

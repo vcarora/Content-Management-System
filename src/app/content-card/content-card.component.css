@@ -1,0 +1,24 @@
+#content-container{
+    border: 1px solid gray;
+    width: 80%;
+    margin: .4rem;
+    padding: .4rem;
+}
+#bottom-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -2%;
+}
+.icons{
+    width: max-content;
+    margin-left: auto; 
+margin-right: 0;
+}
+
+#sub-container{
+    border: 1px solid blueviolet;
+    width: 80%;
+    margin: .4rem;
+    padding: .4rem;
+    border-radius: 10px;
+}

@@ -1,0 +1,21 @@
+<div id="content-container">
+    <!-- <p>{{content?.cid}}</p> -->
+    <h1 id="title">
+        {{content?.title}}
+    </h1>
+    <p id="description">
+        {{content?.description}}
+    </p>
+    <div class="icons">
+        <button mat-icon-button color="primary" (click)="edit(content)">
+            <mat-icon>edit</mat-icon>
+          </button>   
+          <button mat-icon-button color="primary" (click)="delete(content)">
+            <mat-icon>delete</mat-icon>
+          </button>       
+    </div>
+    <!-- <div id="bottom-container" >
+        <p>author</p>
+        <p>published On</p>
+    </div> -->
+</div>

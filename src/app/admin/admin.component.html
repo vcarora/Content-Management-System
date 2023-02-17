@@ -1,0 +1,10 @@
+
+<div id="dashboard">
+    <div id="main-content-container">
+        <div id="content-container" *ngFor="let data of userData">
+            <app-content-card  [userData]="data"></app-content-card>
+        </div> 
+    </div>
+   
+    <app-add></app-add>
+</div>
